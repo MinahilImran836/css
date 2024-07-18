@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width =device-width, initial-scale =1.0">
+    <title>Recipe Page</title>
+    <style>
+        .box {
+            height: 2200px;
+            width: 1000px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .box2 {
+            background-color: #faf0f8;
+            border-radius: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .divider {
+            padding: 1px;
+            border-radius: 10px;
+            margin: 10px;
+            margin-top: 40px;
+            background-color: rgb(239, 237, 237);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 0;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+        }
+
+        .image {
+            max-height: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+        }
+
+        .h {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 46px;
+            color: rgb(117, 44, 44);
+        }
+
+        .p {
+            color: grey;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            list-style-position: outside;
+        }
+
+        li {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+
+        }
+
+        .nutrition-table th,
+        .nutrition-table td {
+            border: 1px solid #ddd;
+            border-left: hidden;
+            border-right: hidden;
+            padding: 8px;
+            text-align: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nutrition-table td {
+            color: rgb(117, 44, 44);
+        }
+
+        @media screen and (max-width: 600px) {
+            .h1 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 32px;
+            }
+
+            .box {
+                height: 2100px;
+                width: 1000px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img class="image" src="assets/images/image-omelette.jpeg" alt="Descriptive Alt Text">
+        <h1 class="h1">
+            Simple Omelette Recipe
+        </h1>
+        <p class="p">
+            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
+            perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
+        <div class="box2">
+            <h2 class="">Preparation time</h2>
+            <ul>
+                <li>
+                    2-3 Large eggs
+                </li>
+                <li>
+                    2-s Large eggs
+                </li>
+                <li>
+                    2-s Large eggs
+                </li>
+            </ul>
+        </div>
+        <h2 class="h">Ingredients</h2>
+        <ul>
+            <li>
+                2-3 Large eggs
+            </li>
+            <li>
+                2-s Large eggs
+            </li>
+            <li>
+                2-s Large eggs
+            </li>
+        </ul>
+        <div class="divider"></div>
+        <h2 class="h">Instructions</h2>
+        <ol>
+            <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are
+                well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+            <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the
+                pan to ensure the eggs evenly coat the surface.</li>
+            <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly
+                runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it
+                over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+        <div class="divider"></div>
+        <div class="nutrition">
+            <h2 class="h">Nutrition</h2>
+            <p class="p">The table below shows nutritional values per serving without the additional fillings.</p>
+            <table class="nutrition-table">
+                <tr>
+                    <th>Calories</th>
+                    <td><strong>277kcal</strong></td>
+                </tr>
+                <tr>
+                    <th>Carbs</th>
+                    <td><strong>0g</strong></td>
+                </tr>
+                <tr>
+                    <th>Protein</th>
+                    <td><strong>20g</strong></td>
+                </tr>
+                <tr>
+                    <th>Fat</th>
+                    <td><strong>22g</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
